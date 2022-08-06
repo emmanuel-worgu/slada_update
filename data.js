@@ -9,7 +9,7 @@ async function track() {
 
     console.log(trackInput);
 
-    const url = 'http://localhost:5000/admin/id-info/';
+    const url = 'https://sigmadelivery.herokuapp.com/admin/id-info/';
     const data = {
       trackNumber: trackInput,
     };
