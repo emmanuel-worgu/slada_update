@@ -34,12 +34,12 @@ function getData() {
       if (data.shipStatus === 'held') {
         hdBg.style.backgroundColor = 'red'
         hdBg.style.fontWeight = 900
-        return hdBg.textContent = data.shipStatus;
+        return hdBg.textContent = 'ON HOLD';
       }
   
       hdBg.style.backgroundColor = 'green'
       hdBg.style.fontWeight = 900
-      return hdBg.textContent = data.shipStatus;
+      return hdBg.textContent = 'IN TRANSIT';
     } catch (error) {
       console.log(error);
     }
