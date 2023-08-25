@@ -34,9 +34,9 @@ async function track() {
       return alert(doc.message);
     }
 
-    document.getElementById('submit_wpcargo').value = 'TRACK RESULT'
-    sessionStorage.setItem('doc', JSON.stringify(doc));
-    document.location.href = '/track-data.html';
+    document.getElementById('submit_wpcargo').value = 'TRACKING...'
+    // sessionStorage.setItem('doc', JSON.stringify(doc));
+    // document.location.href = '/track-data.html';
   } catch (error) {
     document.getElementById('submit_wpcargo').value = 'TRACK RESULT'
     console.log(error);
