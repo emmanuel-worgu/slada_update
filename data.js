@@ -35,8 +35,8 @@ async function track() {
     }
 
     document.getElementById('submit_wpcargo').value = 'TRACKING...'
-    // sessionStorage.setItem('doc', JSON.stringify(doc));
-    // document.location.href = '/track-data.html';
+    sessionStorage.setItem('doc', JSON.stringify(doc));
+    document.location.href = '/track-data.html';
   } catch (error) {
     document.getElementById('submit_wpcargo').value = 'TRACK RESULT'
     console.log(error);
